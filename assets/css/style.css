@@ -1,0 +1,168 @@
+header{
+    grid-area: header;
+    background-color: #262526;
+    color:white;
+    padding-top: 5px;
+    padding-bottom:5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large ;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+    menu{
+    grid-area: menu;
+    background-color: red;
+    padding-left: 0px;/*corre el menu al inicio*/
+    padding-top: 0px;
+    margin-top: 0px;/*arrgla los margenes en el menu*/
+    margin-bottom: 0px;
+    width: 100%;
+    }
+    main{
+    grid-area: main;
+    background-color: #8888;
+    }
+    footer{
+    grid-area: footer;
+    background-color: yellowgreen;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "menu main"
+        "footer footer";
+        grid-template-rows: auto 1fr auto; /* Ajusta las alturas según tus necesidades */
+        grid-template-columns: 15% 1fr; /* Ajusta los anchos según tus necesidades */
+        gap: 0px; /* Ajusta el espacio entre las celdas */
+        
+        }
+
+        nav {
+            display:flex; /*aqui uso un flex*/
+            justify-content: left;
+            background-color: #777;
+            color: #fff;
+            font-size: 16px;
+            height: 100%; /* Ajusta la altura según tus necesidades */
+            width: auto;
+            margin-left: 0%;
+            /*text-align: left;*/
+
+          
+          }
+          nav ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            /*display: flex;*/
+            align-items: end; /* Centra verticalmente los elementos */
+            height: 100%; /* Ocupa todo el espacio vertical de la barra de navegación */
+            flex-direction: column;
+    
+          }
+          nav ul li {
+            display:block;
+            flex: 1; /* Distribuye el espacio de manera equitativa */
+          }
+
+          nav ul li a {
+            display: flex;
+            padding: 20px 20px;
+            color: #fff;
+            width:100% ;
+            text-decoration: none;
+          }
+          nav ul li a:hover {
+            background-color: #555;
+          }
+          .categoria{
+            font-size: 25px;
+            color:#262526;
+          }
+          .categoria p{
+            color: white;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          .Perfume a{
+            color:white;
+            font-weight: 500;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          .Ropa a{
+            color:white;
+            font-weight: 500;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          .Accesorios a{
+            color:white;
+            font-weight: 500;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          .Zapatos a{
+            color:white;
+            font-weight: 500;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+
+          footer{
+            text-align: center;
+            background-color: #777;
+            font-size: 40px;
+            color:whitesmoke;
+            font-style: oblique;
+            border:solid white;
+             
+          }
+          .grid-container_Main{            
+              display: grid;
+              grid-template-columns: auto auto auto;
+              gap: 10px;
+
+          }
+          .item1{
+            display:flex;
+            flex-direction: column;  
+            align-items: center;     
+            text-align: center;
+            background-color: #e4e4e5;
+            padding: 0% 0% 0% 0%;
+            object-fit: cover;
+          }
+          .item1 img{
+            /*max-width: 80%;*/
+            /*max-height: 80%;*/
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            padding-top:20px;
+          }
+          button{
+            width: 100%;
+            height: 40px;
+            color: white;
+            font-size: 20px;
+            background-color: #555;
+            border:#555;
+            
+          }
+          p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+            font-weight: 400;
+            color: #666666; 
+          }
+          h4{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            font-weight: 600;
+            color: #3c3c3c;
+
+          }
+          
+            
+
+          
